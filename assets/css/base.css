@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #1a73e8;
 }
 
 *{
@@ -26,7 +27,7 @@ html{
     border-radius: 3px;
     outline: none;
     color: var(--white-color);
-    background-color: #1a73e8;
+    background-color: var(--primary-color);
 }
 .btn:hover{
     background-color: #1a73e8e7;
