@@ -12,7 +12,7 @@
 }
 
 .navbar__infor-icon{
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 0 16px;
     color: var(--text-color);
 }
@@ -20,15 +20,19 @@
     margin: 0 8px;
     color: var(--text-color);
     font-size: 1.4rem;
-    font-weight: 1000;
+    font-weight: 500;
     font-style: bold;
     text-decoration: none;
     line-height: 3rem;
 }
 
-.navbar__infor-link:hover{
+.navbar__infor-link--active{
     color: var(--primary-color);
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--primary-color);
+}
+.navbar__infor-link:hover{
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .navbar__account{
@@ -39,12 +43,19 @@
 .navbar__account-product-img,
 .navbar__account-product-icon{
     font-size: 1.8rem;
+    padding: 6px 6px;
     margin-right: 16px;
     color: var(--text-color);
+    
+}
+
+.navbar__account-product-img:hover{
+    border-radius: 50px;
+    background-color: rgba(60,64,67,0.08);
 }
 
 .navbar__account-product-img{
-    width: 24px;
+    width: 35px;
 }
 
 
@@ -59,6 +70,19 @@
     align-items: center;
 }
 
+.content__logo:hover  .content__logo-6oh{
+    display: block;
+}
+.content__logo:hover  .content__logo-img{
+    display: none;
+}
+
+
+.content__logo-6oh{
+    width: 200px;
+    display: none;
+    margin-bottom: 9px;
+}
 .content__logo-img{
     width: 200px;
 }
@@ -132,7 +156,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 16px;
 }
+
+
 
 .footer__bottom-location-name{
     font-size: 1.3rem;
@@ -152,5 +179,25 @@
     font-weight: 500;
     /* font-style: bold; */
     text-decoration: none;
-    margin-bottom: 30px;
+  
+}
+
+.footer__setting{
+    border-top: 1px solid #dadce0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__setting-setup{
+    margin-top: 12px;
+}
+.footer__setting-ads{
+    margin-top: 8px;
+}
+.footer__setting-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    padding: 4px 8px;
 }
